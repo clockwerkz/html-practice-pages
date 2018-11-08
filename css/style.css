@@ -1,3 +1,26 @@
 body {
     background-color: #999999;
 }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__item {
+    margin-right: 10px;
+}
+
+.navbar__item--last {
+    margin-right: 0;
+}
