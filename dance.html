@@ -11,7 +11,7 @@
 </head>
 <body>
     <section class="hero">
-        <div class="navbar-wrapper">
+        <div class="navbar-wrapper container">
             <h2>Grazia</h2>
             <ul class="navbar">
                 <li class="navbar__item">
@@ -39,7 +39,7 @@
                         Nav Item
                     </a>
                 </li>
-                <li class="navbar__item">
+                <li class="navbar__item navbar__item--last">
                     <a href="#" class="navbar__link">
                         Login
                     </a>
@@ -53,7 +53,14 @@
             </h1>
             <button class="btn">Join Class <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
         </div>
-
+        <div class="carousel__controls">
+            <div class="carousel__control carousel__control--left-caret"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+            <div class="carousel__control carousel__control--right-caret"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+            <div class="carousel__slider">
+                <div class="carousel__slide"></div>
+            </div>
+        </div>
     </section>
+    <script src='js/dance.js'></script>
 </body>
 </html>
