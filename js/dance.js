@@ -1,7 +1,8 @@
 const slider = document.querySelector('.carousel__panels');
-let transX = 0;
+let transX = -100;
 let objWidth =100;
-let limit = (100*2)-100;
+let upperLimit = -(100*4);
+let lowerLimit = 0;
 let reset=false;
 let setTransition = false;
 let timerObj=null;
@@ -17,8 +18,8 @@ leftControl.addEventListener('click', ()=>{
   }
   setAnimationTransition();
   transX+=objWidth;
-  slider.style.transform = `translateX(${transX}px)`;
-  setSlideTimer();
+  setTranslate(transX);
+  //setSlideTimer();
 });
 
 rightControl.addEventListener('click', ()=>{
@@ -27,34 +28,37 @@ rightControl.addEventListener('click', ()=>{
     timerObj=null;
   }
   setAnimationTransition();
-  transX-=800;
-  slider.style.transform = `translateX(${transX}px)`;
-  setSlideTimer();
+  transX-=objWidth;
+  setTranslate(transX);
+  //setSlideTimer();
 });
 
 
 slider.addEventListener('transitionend', ()=> {
-  console.log(transX);
-  if (transX<=-100) {
+    debugger;
+  if (transX===upperLimit) {
     setAnimationTransition(false);
-    transX=-100;
-    slider.style.transform = `translateX(${transX}px)`;
-  } else if (transX>= 0) {
+    transX=lowerLimit-objWidth;
+    setTranslate(transX);
+  } else if (transX=== lowerLimit) {
     setAnimationTransition(false);
-    transX=-4000;
-    slider.style.transform = `translateX(${transX}px)`;
+    transX=upperLimit+100;
+    setTranslate(transX);
   }
 });
 
 const setSlideTimer = () => {
-  debugger;
   if (!timerObj) {
     timerObj = setInterval(()=> {
       setAnimationTransition();
       transX-=800;
-      slider.style.transform = `translateX(${transX}px)`;
+      setTranslate(transX);
     }, 6000);
   }
+}
+
+const setTranslate = (value) => {
+    slider.style.transform = `translateX(${value}%)`;
 }
 
 const setAnimationTransition = (animated=true) => {
