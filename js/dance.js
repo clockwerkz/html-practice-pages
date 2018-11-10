@@ -1,36 +1,69 @@
-const settings = {
-    controls : document.querySelectorAll('.carousel__control'), 
-    images : [
-        'chris-yang-501380-unsplash.jpg', 
-        'photo-1508807526345-15e9b5f4eaff.jpg'
-        ],   
-    imageFolder : 'img/',
-    hero : document.querySelector('.hero'),
+const slider = document.querySelector('.carousel__panels');
+let transX = 0;
+let objWidth =100;
+let limit = (100*2)-100;
+let reset=false;
+let setTransition = false;
+let timerObj=null;
+
+leftControl = document.querySelector('.carousel__control--left-control');
+rightControl = document.querySelector('.carousel__control--right-control');
+
+
+leftControl.addEventListener('click', ()=>{
+  if (timerObj) {
+    clearInterval(timerObj);
+    timerObj=null;
+  }
+  setAnimationTransition();
+  transX+=objWidth;
+  slider.style.transform = `translateX(${transX}px)`;
+  setSlideTimer();
+});
+
+rightControl.addEventListener('click', ()=>{
+  if (timerObj) {
+    clearInterval(timerObj);
+    timerObj=null;
+  }
+  setAnimationTransition();
+  transX-=800;
+  slider.style.transform = `translateX(${transX}px)`;
+  setSlideTimer();
+});
+
+
+slider.addEventListener('transitionend', ()=> {
+  console.log(transX);
+  if (transX<=-100) {
+    setAnimationTransition(false);
+    transX=-100;
+    slider.style.transform = `translateX(${transX}px)`;
+  } else if (transX>= 0) {
+    setAnimationTransition(false);
+    transX=-4000;
+    slider.style.transform = `translateX(${transX}px)`;
+  }
+});
+
+const setSlideTimer = () => {
+  debugger;
+  if (!timerObj) {
+    timerObj = setInterval(()=> {
+      setAnimationTransition();
+      transX-=800;
+      slider.style.transform = `translateX(${transX}px)`;
+    }, 6000);
+  }
+}
+
+const setAnimationTransition = (animated=true) => {
+    if (animated) {
+        slider.style.transition = 'transform 0.75s ease-in-out';
+    } else {
+        slider.style.transition = 'none'; 
+    }
 }
 
 
-const carousel = function ({ controls, images, imageFolder, hero }) {
-    let index = 0;
-
-    const init = () => {
-        controls.forEach(
-           control => control.addEventListener('click', controlClick)
-        )
-    }
-
-    const changeBackgroundImage = () => {
-        hero.style.backgroundImage = `url('${imageFolder}${images[index]}')`;
-    }
-
-    const controlClick = () => {
-        index = (index+1)%images.length;
-        changeBackgroundImage();
-    }
-
-    return {
-        init
-    }
-
-}(settings);
-
-carousel.init();
+//setSlideTimer();

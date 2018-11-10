@@ -27,13 +27,15 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 250px;
     font-size: 3rem;
+    cursor: pointer;
+    z-index: 50;
 }
 
-.carousel__control--left-caret {
+.carousel__control--left-control {
     left: 40px;
 }
 
-.carousel__control--right-caret {
+.carousel__control--right-control {
     right: 40px;
 }
 .carousel__slider {
@@ -48,24 +50,57 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px solid #fff;
 }
 
+.carousel__images {
+    position: absolute;
+    top: 0;
+    height: 550px;
+    width: 100%;
+    transform: translateX(0%);
+    overflow: hidden;
+}
+.carousel__panels {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: translateX(0%)
+}
+.carousel__panel {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+.carousel__panel--1 {
+    background: url('../img/chris-yang-501380-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+.carousel__panel--2 {
+    background: url('../img/photo-1508807526345-15e9b5f4eaff.jpg') center center no-repeat;
+    background-size: cover;
+}
+.carousel__panel--3 {
+    background: url('../img/david-hofmann-579796-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
 /*** HERO ***/
 
 .hero {
     height: 550px;
-    background: url('../img/chris-yang-501380-unsplash.jpg') center center no-repeat;
-    background-size: cover;
     text-transform: uppercase;
     color: #fff;
     transition: all 0.25s;
 }
 
-.hero-carousel {
+.hero__description {
+    position: absolute;
     width: 40%;
     margin-top: 13rem;
    text-align: right;
+   z-index: 30;
 }
 
-.hero-carousel__title {
+.hero__title {
     line-height: 3rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
@@ -73,10 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navbar-wrapper {
+    position: relative;
     padding-top: 0.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 30;
 }
 
 .navbar {
@@ -98,6 +135,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*** CAROUSEL ***/
+
+
 
 
 
