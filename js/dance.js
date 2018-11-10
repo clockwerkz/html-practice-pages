@@ -19,7 +19,7 @@ leftControl.addEventListener('click', ()=>{
   setAnimationTransition();
   transX+=objWidth;
   setTranslate(transX);
-  //setSlideTimer();
+  setSlideTimer();
 });
 
 rightControl.addEventListener('click', ()=>{
@@ -30,12 +30,11 @@ rightControl.addEventListener('click', ()=>{
   setAnimationTransition();
   transX-=objWidth;
   setTranslate(transX);
-  //setSlideTimer();
+  setSlideTimer();
 });
 
 
 slider.addEventListener('transitionend', ()=> {
-    debugger;
   if (transX===upperLimit) {
     setAnimationTransition(false);
     transX=lowerLimit-objWidth;
@@ -51,7 +50,7 @@ const setSlideTimer = () => {
   if (!timerObj) {
     timerObj = setInterval(()=> {
       setAnimationTransition();
-      transX-=800;
+      transX-=objWidth;
       setTranslate(transX);
     }, 6000);
   }
@@ -70,4 +69,4 @@ const setAnimationTransition = (animated=true) => {
 }
 
 
-//setSlideTimer();
+setSlideTimer();

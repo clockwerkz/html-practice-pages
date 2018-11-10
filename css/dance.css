@@ -22,6 +22,108 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/*** NAVBAR ***/
+
+.navbar-wrapper {
+    position: relative;
+    padding-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 30;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__item {
+    margin-right: 1.5rem;
+    font-size: 0.65rem;
+}
+
+.navbar__item--last {
+    margin-right: 0;
+}
+
+.navbar__link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*** HERO ***/
+
+.hero {
+    height: 550px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.25s;
+}
+
+.hero__description {
+    position: absolute;
+    width: 40%;
+    margin-top: 13rem;
+   text-align: right;
+   z-index: 30;
+}
+
+.hero__title {
+    line-height: 3rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+
+/*** ABOUT ***/
+
+.about {
+    padding: 5rem 0;
+}
+
+.info__card {
+    display: flex;
+    width: 100%;
+    max-height: 20rem;
+    border: 10px solid #CFD9F3;
+}
+
+.info__image {
+    width: 100%;
+    height: auto;
+    flex: 4;
+}
+
+.info__description {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.4rem 0 1.4rem 3rem;
+
+}
+
+.card__header {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.program__pages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.program__link {
+    font-size: .8rem;
+    color: #777;
+}
+
+/*** CAROUSEL ***/
 
 .carousel__control {
     position: absolute;
@@ -83,65 +185,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*** HERO ***/
-
-.hero {
-    height: 550px;
-    text-transform: uppercase;
-    color: #fff;
-    transition: all 0.25s;
-}
-
-.hero__description {
-    position: absolute;
-    width: 40%;
-    margin-top: 13rem;
-   text-align: right;
-   z-index: 30;
-}
-
-.hero__title {
-    line-height: 3rem;
-    font-weight: 400;
-    margin-bottom: 1.25rem;
-}
-
-
-.navbar-wrapper {
-    position: relative;
-    padding-top: 0.75rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 30;
-}
-
-.navbar {
-    list-style: none;
-    display: flex;
-}
-
-.navbar__item {
-    margin-right: 1.5rem;
-    font-size: 0.65rem;
-}
-
-.navbar__item--last {
-    margin-right: 0;
-}
-
-.navbar__link {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/*** CAROUSEL ***/
-
-
-
-
-
 /*** BUTTONS ***/
 
 .btn {
@@ -159,4 +202,29 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     color: #333;
     border-color: #333;
+}
+
+.btn--info {
+    color: #999;
+    border-color: #777;
+    max-width: 30%;
+}
+
+
+
+/*** MEDIA QUERIES ***/
+
+@media screen and (min-width:1100px) {
+    body {
+        background-color: #444;
+    }
+    .hero, .about, .carousel__images {
+        background-color: #fff;
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .carousel__images {
+        
+    }
 }
