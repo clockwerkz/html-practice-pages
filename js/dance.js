@@ -35,11 +35,11 @@ rightControl.addEventListener('click', ()=>{
 
 
 slider.addEventListener('transitionend', ()=> {
-  if (transX===upperLimit) {
+  if (transX<=upperLimit) {
     setAnimationTransition(false);
     transX=lowerLimit-objWidth;
     setTranslate(transX);
-  } else if (transX=== lowerLimit) {
+  } else if (transX>= lowerLimit) {
     setAnimationTransition(false);
     transX=upperLimit+100;
     setTranslate(transX);
