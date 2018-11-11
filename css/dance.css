@@ -147,12 +147,9 @@ h1, h2, h3, h4, h5, h6 {
 /*** EVENT-CALENDAR ***/
 .event-calendar {
     background-color: #CFD9F3;
-    padding-top: 3rem;
+    padding: 3rem 0;
 }
 
-.event-calendar__wrapper {
-   
-}
 
 .event-calendar__title {
     margin-bottom: 5rem;
@@ -169,14 +166,92 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .events-carousel__panel {
-    background-color: #fff;
-    width: 22%;
+    width: 23%;
 }
 
 .events-carousel__image {
     height: auto;
     width: 100%;
 }
+
+.event__date-range {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight:bold;
+    line-height: 1.2rem;
+}
+
+.event__name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+.event__details {
+    font-size: .6rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.event__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #777;
+}
+
+/*** TEACHERS **/
+.teachers {
+    background-color: #fff;
+}
+.teachers__wrapper {
+    padding: 3rem 0;
+}
+
+.teachers__title {
+    text-align: center;
+}
+.teachers__container {
+    width: 100%;
+}
+
+.teacher__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.teacher__card {
+    width: 15%;
+}
+
+.teacher__name {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.75rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.teacher__info {
+    margin: 0;
+    font-size: .8rem;
+    line-height: .8rem;
+}
+
+.teacher__link {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.teacher__image {
+    width: 100%;
+    height: auto;
+}
+
 
 /*** CAROUSEL ***/
 .carousel__controls {
@@ -261,14 +336,15 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #333;
 }
 
-.btn--info {
+.btn--info, .btn--view-all {
     color: #999;
     border-color: #777;
     max-width: 35%;
 }
 
-.btn--center {
-    margin: 2rem auto;
+.btn--view-all {
+    display: block;
+    margin: 1.5rem auto 0;
 }
 
 
@@ -279,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
     body {
         background-color: #333;
     }
-    .hero, .about, .carousel__images, .event-calendar {
+    .hero, .about, .carousel__images, .event-calendar, .teachers {
 
         width: 1100px;
         margin: 0 auto;
