@@ -150,16 +150,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 3rem;
 }
 
-.event-calendar__wrapper {
-   
-}
-
 .event-calendar__title {
     margin-bottom: 5rem;
 }
 
 .events-carousel {
-    max-height: 300px;
+    height: 300px;
 }
 
 .events-carousel__panels {
@@ -169,13 +165,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .events-carousel__panel {
-    background-color: #fff;
-    width: 22%;
+    flex-basis: 10%;
 }
 
 .events-carousel__image {
-    height: auto;
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
 
 /*** CAROUSEL ***/
