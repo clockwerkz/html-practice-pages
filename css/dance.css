@@ -143,14 +143,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*** EVENT-CALENDAR ***/
-
-.event-calendar__wrapper {
+.event-calendar {
     background-color: #CFD9F3;
+}
+.event-calendar__wrapper {
     height: 300px;
 }
 
 /*** CAROUSEL ***/
-
+.carousel__controls {
+    position: relative;
+}
 .carousel__control {
     position: absolute;
     top: 250px;
@@ -242,10 +245,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:1100px) {
     body {
-        background-color: #444;
+      
     }
-    .hero, .about, .carousel__images {
-        background-color: #fff;
+    .hero, .about, .carousel__images, .event-calendar {
+
         width: 1100px;
         margin: 0 auto;
     }
