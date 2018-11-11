@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
     padding: 5rem 0;
+    background-color: #fff;
 }
 
 .card {
@@ -245,6 +246,10 @@ h1, h2, h3, h4, h5, h6 {
 /*** MEDIA QUERIES ***/
 
 @media screen and (min-width:1100px) {
+
+    body {
+        background-color: #333;
+    }
     .hero, .about, .carousel__images, .event-calendar {
 
         width: 1100px;
