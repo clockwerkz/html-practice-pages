@@ -264,6 +264,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__wrapper {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer__title {
@@ -276,10 +278,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     list-style: none;
     display: flex;
+    padding: 3rem 0;
 }
 
 .footer-navbar__item {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     font-size: 0.65rem;
 }
 
@@ -291,6 +294,24 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     text-transform: uppercase;
     color: #333;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.contact-info__address, .contact-info__email, .contact-info__phone {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info__email {
     cursor: pointer;
 }
 
@@ -396,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
     body {
         background-color: #333;
     }
-    .hero, .about, .carousel__images, .event-calendar, .teachers {
+    .hero, .about, .carousel__images, .event-calendar, .teachers, .footer {
 
         width: 1100px;
         margin: 0 auto;
