@@ -147,16 +147,15 @@ h1, h2, h3, h4, h5, h6 {
 /*** EVENT-CALENDAR ***/
 .event-calendar {
     background-color: #CFD9F3;
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
-
-
 .event-calendar__title {
     margin-bottom: 5rem;
 }
 
 .events-carousel {
     max-height: 300px;
+    margin-bottom: 2rem;
 }
 
 .events-carousel__panels {
@@ -204,9 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 /*** TEACHERS **/
 .teachers {
     background-color: #fff;
-}
-.teachers__wrapper {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 .teachers__title {
@@ -252,6 +249,50 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
+.location {
+    margin-top: 3rem;
+}
+
+.location__map {
+    width: 100%;
+}
+
+/*** FOOTER ***/
+.footer {
+    background-color: #CFD9F3;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__title {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-navbar {
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer-navbar__item {
+    margin-right: 1.5rem;
+    font-size: 0.65rem;
+}
+
+.footer-navbar__item--last {
+    margin-right: 0;
+}
+
+.footer-navbar__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    cursor: pointer;
+}
 
 /*** CAROUSEL ***/
 .carousel__controls {
@@ -344,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn--view-all {
     display: block;
-    margin: 1.5rem auto 0;
+    margin: 0 auto;
 }
 
 

@@ -79,7 +79,7 @@
     <!-- ABOUT SECTION -->
 
     <section class="about">
-        <div class="about__wrapper container">
+        <div class="container">
             <div class="card">
                 <img class="card__image" src="https://via.placeholder.com/400/400" />
                 <div class="card__description">
@@ -116,14 +116,14 @@
                     <button class="btn btn--info">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                 </div> <!-- .card__description -->
             </div> <!-- .card -->
-        </div>
+        </div> <!-- .container -->
     </section> <!-- .about -->
 
 
     <!-- EVENTS SECTION-->
 
     <section class="event-calendar">
-        <div class="event-calendar__wrapper container">
+        <div class="container">
             <h1 class="event-calendar__title section__heading">Event<br>
                 Calendar
             </h1>
@@ -156,13 +156,13 @@
                 </div>
             </div>
             <button class="btn btn--view-all">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-        </div>
+        </div> <!-- .container -->
     </section> <!-- .event-calendar -->
 
 
     <!-- TEACHERS SECTION -->
     <section class="teachers">
-        <div class="teachers__wrapper container">
+        <div class="container">
             <h1 class="teachers__title section__heading">Our Teachers</h1>
             <div class="teachers__container">
                 <div class="teacher__row">
@@ -231,10 +231,51 @@
                     </div> <!-- .teacher__row -->
             </div> <!-- .teachers -->
             <button class="btn btn--view-all">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-        </div> <!-- .teachers__wrapper container -->
+            <div class="location">
+                <img src="img/map.png" alt="School location on Google Maps" class="location__map" />
+            </div>
+        </div> <!-- .container -->
     </section> <!-- .teachers -->
 
-
+    
+    <!-- FOOTER -->
+    
+    <footer class="footer">
+        <div class="footer__wrapper container">
+                <ul class="footer-navbar">
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">
+                            Nav Item
+                        </a>
+                    </li>
+                    <li class="footer-navbar__item">
+                            <a href="#" class="footer-navbar__link">
+                                Nav Item
+                            </a>
+                        </li>
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">
+                            Nav Item
+                        </a>
+                    </li>
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">
+                            Nav Item
+                        </a>
+                    </li>
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">
+                            Nav Item
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="footer__title">Grazia</h2>
+                <div class="address__info">
+                    <p>1234 North Any Street<br>City, State, Zip Code</p>
+                    <a href="mailto:info@grazia.com">info@grazia.com</a>
+                </div>
+        </div>
+    </footer>
 
     <script src='js/dance.js'></script>
 </body>
