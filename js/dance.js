@@ -16,6 +16,7 @@ leftControl.addEventListener('click', ()=>{
     clearInterval(timerObj);
     timerObj=null;
   }
+  if (transX>= lowerLimit) return;
   setAnimationTransition();
   transX+=objWidth;
   setTranslate(transX);
@@ -27,6 +28,7 @@ rightControl.addEventListener('click', ()=>{
     clearInterval(timerObj);
     timerObj=null;
   }
+  if (transX<=upperLimit) return;
   setAnimationTransition();
   transX-=objWidth;
   setTranslate(transX);
