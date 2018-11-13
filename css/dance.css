@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -326,7 +330,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .fa {
     margin: 0 0.5rem;
-    color: #7f8082;
 }
 
 /*** CAROUSEL ***/
