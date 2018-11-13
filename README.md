@@ -10,7 +10,7 @@ This page is based on a final project design from a student at Design Lab.
 *Dance Studio Page Notes*
 I ended up building my own Image Slider with Vanila JavaScript. I wanted an image slider that would slide images from one direction to another, and I couldn't find one that offered that feature. 
 
-#### TODO
+#### Dance Studio Page TO-DO
 - [ ] Make Nav and footer collapsible
 - [ ] Add mobile size query
 - [ ] Add tablet size query
