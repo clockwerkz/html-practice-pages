@@ -9,3 +9,15 @@ This page is based on a final project design from a student at Design Lab.
 
 *Dance Studio Page Notes*
 I ended up building my own Image Slider with Vanila JavaScript. I wanted an image slider that would slide images from one direction to another, and I couldn't find one that offered that feature. 
+
+#### TODO
+[ ] - Make Nav and footer collapsible
+[ ] - Add mobile size query
+[ ] - Add tablet size query
+[ ] - Refactor image slider carousel to be reusable
+[ ] - Add more Calendar Event Entries
+[ ] - Add Calendar Event image slider functionality
+[ ] - Add provisions for Calendar Event Slider so the controls fall inside when the page is scaled down
+[ ] - Add color change to hovering over nagivation/links
+[ ] - replace map image with embedded google map
+[ ] - Fix incorrect ratios for the About Sections

@@ -297,7 +297,7 @@ img {
     margin-right: 0;
 }
 
-.footer-navbar__link {
+.footer-navbar__link, .footer-navbar__link:visited {
     text-decoration: none;
     text-transform: uppercase;
     color: #333;
