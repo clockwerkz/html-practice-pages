@@ -20,4 +20,4 @@ I ended up building my own Image Slider with Vanila JavaScript. I wanted an imag
 - [ ] Add provisions for Calendar Event Slider so the controls fall inside when the page is scaled down
 - [ ] Add color change to hovering over nagivation/links
 - [ ] replace map image with embedded google map
-- [ ] Fix incorrect ratios for the About Sections
+- [X] Fix incorrect ratios for the About Sections

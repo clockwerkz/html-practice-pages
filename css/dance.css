@@ -17,7 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 
 .container {
@@ -103,9 +104,7 @@ img {
 }
 
 .card__image {
-    width: 100%;
-    height: auto;
-    flex: 4;
+    width: 50%
 }
 
 .card__image--even {
@@ -113,7 +112,7 @@ img {
 }
 
 .card__description {
-    flex: 6;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -146,6 +145,31 @@ img {
 .program__link {
     font-size: 0.8rem;
     color: #777;
+}
+
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-wrap: wrap;
+        max-height: 100%;
+    }
+    .card__image, 
+    .card__description {
+        width: 100%;
+        padding: 0;
+    }
+    .card__image {
+        height: 100%;
+    }
+    .card__image--even,
+    .card__description--even {
+        order: 0;
+        width: 100%;
+    } 
+    .card__text {
+        padding: 0;
+    }
+
 }
 
 /*** EVENT-CALENDAR ***/
@@ -418,7 +442,11 @@ img {
 .btn--info, .btn--view-all {
     color: #999;
     border-color: #777;
-    max-width: 35%;
+    width: 10rem;;
+}
+
+.btn--view-all {
+    width: 9rem;
 }
 
 .btn--view-all {
@@ -428,6 +456,7 @@ img {
 
 
 /*** MEDIA QUERIES ***/
+
 
 @media screen and (min-width:1100px) {
 
