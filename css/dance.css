@@ -60,9 +60,14 @@ img {
 }
 
 .navbar__link {
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navbar__link:hover {
+    color: #fff;
 }
 
 
@@ -283,6 +288,7 @@ img {
 
 .location__map {
     width: 100%;
+    height: 300px;
 }
 
 /*** FOOTER ***/
@@ -366,6 +372,12 @@ img {
     font-size: 3rem;
     cursor: pointer;
     z-index: 50;
+    color: #e0e0e0;
+    transition: all 0.5s;
+}
+
+.carousel__control:hover {
+    color: #fff;
 }
 
 .carousel__control--left-control {
