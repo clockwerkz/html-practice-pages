@@ -22,22 +22,74 @@
     margin: 0;
   }
 
-  /*** CARDS ***/
+  /*** COMMON REUSED STYLES ***/
   .card {
     width: 30%;
   }
 
+  .section__title {
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-  /*** INFORMATION SECTION ***/
+  .section__title:after{
+    content:'';
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    border-bottom: 5px solid #000;
+  }
+
+  .section__title--left {
+    text-align: left;
+  }
+
+  .section__title--left::after {
+    margin: 0;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+/*** HERO ***/
+.hero {
+  text-align: center;
+}
+
+
+  /*** INFORMATION ***/
 
   .info__cards {
     display: flex;
     justify-content: space-between;
   }
 
-  /*** ABOUT SECTION ***/
+  /*** ABOUT ***/
 
   .about__cards {
     display: flex;
     justify-content: space-around;
+  }
+
+  /*** UPDATES ***/
+
+  .updates__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /*** UPCOMING ***/
+  .performance__events {
+    display: flex;
+    justify-content: center;
+  }
+
+  .event {
+    width: 40%;
+    margin: 0 0.4rem;
+    padding: 1rem;
+    background-color: #ddd;
+    min-height: 14rem;
   }
