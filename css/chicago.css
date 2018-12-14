@@ -4,9 +4,45 @@
   margin: 0;
 }
 
+/*** COMMON REUSED STYLES ***/
+
+
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.card {
+  width: 30%;
+}
+
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section__title:after{
+  content:'';
+  display: block;
+  width: 30px;
+  margin: 0 auto;
+  border-bottom: 5px solid #000;
+}
+
+.section__title--left {
+  text-align: left;
+}
+
+.section__title--lowercase {
+  text-transform: inherit;
+}
+
+.section__title--left::after {
+  margin: 0;
+}
+
+section {
+  padding: 40px 0;
 }
 
 /*** NAVBAR ***/
@@ -22,39 +58,21 @@
     margin: 0;
   }
 
-  /*** COMMON REUSED STYLES ***/
-  .card {
-    width: 30%;
-  }
-
-  .section__title {
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .section__title:after{
-    content:'';
-    display: block;
-    width: 30px;
-    margin: 0 auto;
-    border-bottom: 5px solid #000;
-  }
-
-  .section__title--left {
-    text-align: left;
-  }
-
-  .section__title--left::after {
-    margin: 0;
-  }
-
-  section {
-    padding: 40px 0;
-  }
 
 /*** HERO ***/
 .hero {
   text-align: center;
+}
+
+.section__title--hero {
+  font-size: 2.5rem;
+}
+
+.hero__description {
+  width: 60%;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  line-height: 1.5rem;
 }
 
 
@@ -92,4 +110,60 @@
     padding: 1rem;
     background-color: #ddd;
     min-height: 14rem;
+  }
+  
+  /*** CONTACT FORM ***/
+
+  .contact__form {
+    display: flex;
+  }
+
+  .form__input {
+    width: 28%;
+    margin: 0 8px;
+  }
+
+  .form__input--lg {
+    width: 35%;
+  }
+
+  .form__input-box {
+    width: 100%;
+  }
+
+  .form__label {
+    display: block;
+  }
+
+  /*** FOOTER ***/
+  .footer {
+    padding: 1.5rem 0;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-right {
+    display: flex;
+  }
+  .footer-tags, .social-media {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__item, .social__icon {
+    margin: 0 5px;
+  }
+
+
+  /*** MEDIA QUERIES ***/
+
+  @media screen and (min-width: 900px) {
+    section, nav, footer {
+      width: 900px;
+      margin: 0 auto;
+    }
   }
