@@ -67,13 +67,8 @@ createSlider = ( { dimension, carouselObj } ) => {
       slider.style.transform = `translateX(${value}%)`;
   }
   
-  const setAnimationTransition = (animated=true) => {
-      if (animated) {
-          slider.style.transition = 'transform 0.75s ease-in-out';
-      } else {
-          slider.style.transition = 'none'; 
-      }
-  }
+  const setAnimationTransition = (animated=true) => 
+    slider.style.transition = (animated ? 'transform 0.75s ease-in-out' : 'none');
   
   
   setSlideTimer();
