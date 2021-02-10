@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  .card {
+    background-color: goldenrod;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+  }
+  h1 {
+    align-self: flex-start;
+  }
+  img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .card-img {
+    position: relative;
+    transition: all 1s linear;
+  }
+  
+  .card:hover >.card-img {
+    left: 400px;
+  }

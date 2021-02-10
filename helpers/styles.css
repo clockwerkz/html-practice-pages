@@ -1,0 +1,57 @@
+img {
+    width: 100%;
+}
+
+.map {
+    width: 1200px;
+    position: relative;
+    height: 800px;
+    background-image: url('images/Star_Wars_Carousel2.0.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.control-box {
+    position: absolute;
+    bottom: 28px;
+    left: 389px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+#control-box-tooltip {
+    width: 30%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
+    bottom: 280px;
+    left: 320px;
+    display: none;
+}
+
+.control-box img {
+    position: relative;
+    left: 200px;
+}
+.control-box:hover img {
+    left: 0px;
+}
+
+.control-box:hover + #control-box-tooltip {
+    display: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+    .map {
+        width: 1000px;
+        height: 600px;
+    }
+    .control-box {
+        left: 326px;
+        bottom: -5px;
+    }
+    .control-box img {
+        width: 80%;
+        height: auto;
+    }
+}
