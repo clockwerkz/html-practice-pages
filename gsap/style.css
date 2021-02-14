@@ -14,14 +14,13 @@
 .element {
     width: 25%;
     height: 100%;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 }
 
 .element-1 {
     background-color:cadetblue;
 }
 
-
-.element:hover {
-    width: 30%;
+.element-2 {
+    border: 1px solid black;
 }
